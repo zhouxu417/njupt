@@ -40,13 +40,13 @@ function getView($url){
      return $res;
 }
 
-$username='B12050324';//账号
-$password='Zx5845215974';//密码
+$username='';//账号
+$password='';//密码
 $cookie_file =tempnam('./temp','cookie');   //创建临时文件保存cookie
 $login_url = 'http://202.119.225.34/default2.aspx';//登陆地址
 $post['__VIEWSTATE'] = getView($login_url);
-$post['txtUserName'] = 'B12050324';
-$post['TextBox2'] = 'Zx5845215974';
+$post['txtUserName'] = '';
+$post['TextBox2'] = '';
 $post['txtSecretCode'] = '';
 $post['lbLanguage'] = '';
 $post['RadioButtonList1'] = iconv('utf-8', 'gb2312', '学生');
