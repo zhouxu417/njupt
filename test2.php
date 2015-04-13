@@ -15,8 +15,8 @@ function getView($url){
      return $res;
 }
 $url = 'http://202.119.225.34/default2.aspx';
-$stuid='B12050324';
-$stupwd='Zx5845215974';
+$stuid='';
+$stupwd='';
 $cookie_jar = tempnam('./tmp','cookie'); 
 $ch = curl_init();
 $post1['__VIEWSTATE'] = getView($url);
